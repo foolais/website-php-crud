@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.navbar{
+	position: static;
+	background-color: #fff;
+	height: 80px;
+	overflow: hidden;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.menu{
+	position: absolute;
+	left: 20px;
+}
+.logout{ /*agar logout ke kiri*/
+	position: absolute;
+	right: 40px;
+}
+.menu a, .logout a{
+	text-decoration: none;
+	color: #191970
+	font-weight: 700;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+.home{
+	height: 100vh;
+	min-height: 600px;
+	background: url(img/back.png);
+	background-size: cover;
+	background-attachment: fixed;
+}

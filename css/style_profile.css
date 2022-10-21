@@ -1,0 +1,197 @@
+*, body{
+	margin: 0; /* margin 0 dan padding 0 agar semua text mepet kekiri*/
+	padding: 0;
+}
+
+body{
+	background-color: lightgray;
+
+}
+
+/* navbar */
+nav{
+	position: relative; /*agar box bisa dipindah2kan*/
+	width: 100%; /*mengatur lebar box*/
+	height: 60px; /*mengatur tinggi box*/
+	background-color: lightslategray;
+}
+nav ul{
+	position: relative; 
+	top: 20px;/*mengatur li agar ditengah*/
+	float: left; /*mengatur jarak kata dari kiri*/
+	left: 10%; /*valuenya*/
+}
+nav ul li{
+	float: left; /*mengatur urutan kata dari kiri li*/
+	display: block; /*guna block agar bisa mengatur margin sesuai yg diinginkan*/
+	margin: 0px 20px; /*mengatur jarak atas bawah & jarak antar kata*/
+}
+nav ul li a{
+	font-size: 20px;
+	color: lightgrey;
+	font-weight: bold;
+	text-decoration: none/*; menghilangkan dekorasi*/
+}
+nav ul li a:hover{ /*saat kursor mengarah ke kata warna berubah*/
+	color: black;
+}
+
+/*profile section*/
+section.box-profile{
+	display: inline-block;
+	position: relative;
+	width: 80%; /*lebar box*/
+	min-height: 250px; /*tinggi absolut*/
+	margin-left: 10%; /*jarak box dari kiri*/
+	margin-right: 10%; /*jarak box dari kanan*/
+	margin-top: 50px;  /*jarak box dari atas*/
+	border-radius: 6px; /*lengkungan tiap sudut box*/
+	background-color: white;
+}
+.div-profile{
+	display: block;
+}
+.box-profile .img-profile{
+	position: relative;
+	display: block; /*gabungan blok dan inline kotak kotak*/
+	width: 200px; /*biar gambar penuh*/
+	height: 200px; /*biar gambar penuh*/
+	/*border-radius: 30px;*/
+	float: left;/* berurutan dari kiri tiap div*/
+	top: 20px; /*jarak atas dari gambar*/
+	margin-left: 10%; /*jarak kiri tiap blok*/
+	margin-right: 50px; /*jarak kanan tiap blok*/
+}
+.img-profile .foto{
+	height: 100%; /*biar gambar penuh*/
+	background-size: 100%; /*biar gambar penuh*/
+	background-position: 0px;/* posisi gambar terhadap tabel*/
+	border-radius: 300px;/* lengkungan gambar*/
+}
+.deskripsi{
+	position: absolute; /*agar lokasi tetap*/
+	display: block; /*agar bisa diatur lokasinya*/
+	float: left; /*dari kiri*/
+	top: 20px; /*jarak dari atas*/
+	margin-left: 30px; /*jarak dari kiri*/
+	margin-right: 20px;
+}
+.deskripsi p{
+	position: relative;
+	margin-top: 20px;
+}
+.kas{
+	display: inline-block;
+}
+
+/*tombol*/
+.edit{
+	background-color: #52dc90;
+	color: white;  
+}
+.edit:hover{
+	color: green;
+}
+.show{
+	background-color: lightgray;
+	color: white;
+}
+.show:hover{
+	color:black;
+}
+.button{
+	position: relative;
+	padding: 10px 20px;
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-top: 50px;
+	border-radius: 6px;
+}
+
+/*box info*/
+section.box-information{
+	position: relative;
+	width: 80%; /*lebar box*/
+	min-height: 500px; /*tinggi absolut*/
+	margin-left: 10%; /*jarak box dari kiri*/
+	margin-right: 10%; /*jarak box dari kanan*/
+	margin-top: 20px;  /*jarak box dari atas*/
+	margin-bottom: 20px;
+	border-radius: 6px; /*lengkungan tiap sudut box*/
+	background-color: white;
+}
+.header{
+	display: block;
+	background-color: #52dc90;
+	padding: 15px;
+	border-radius: 6px;
+	margin: 5px 0;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+.data{
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	margin: 10px 10%;
+}
+.data .pribadi{
+	position: relative;
+	display: inline-block;
+	margin-right: 70px;
+}
+.data .alamat{
+	position: relative;
+	display: inline-block;
+	margin-right: 70px;
+}
+
+/*box edit*/
+section.box-edit{ /*ganti box edit form*/
+	position: relative;
+	width: 80%; /*lebar box*/
+	min-height: 950px; /*tinggi absolut*/
+	margin-left: 10%; /*jarak box dari kiri*/
+	margin-right: 10%; /*jarak box dari kanan*/
+	margin-top: 20px;  /*jarak box dari atas*/
+	margin-bottom: 20px;
+	border-radius: 6px; /*lengkungan tiap sudut box*/
+	background-color: white;
+}
+.box-edit .form{ /*ganti isi tabel box edit form*/
+	width: 50%;
+	display: grid;
+	margin-top: 10px;
+	margin-left: 10%;
+}
+.form .header-form{ /*ganti header data form*/
+	display: inline;
+	background-color: #52dc90;
+	margin: 10px 0;
+	padding: 8px;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+.form .form-input{ /*ganti form input*/
+	margin: 5px 0;
+	font-size: 15;
+}
+.form p{ /*ganti nama form*/
+	margin-bottom: 5px;
+}
+.form .edit-submit{ /*ganti tombol submit edit form*/
+	display: inline-block;
+	text-decoration: none;
+	background-color: #52dc90;
+	color: white;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 10px;
+}
+.form .edit-submit:hover{
+	color: lightgreen;
+}
